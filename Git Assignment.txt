@@ -63,6 +63,7 @@ A
 git checkout master
 git merge Enhancement
 $ git push origin master
-git branch -d Enhancement
+$git branch -d Enhancement(Delete Local Branch)
+$ git push origin --delete Enhancement(Delete Remote Branch)
 
 Now Enhancement is the new Master branch and previous Enhancement Branch Deleted.
