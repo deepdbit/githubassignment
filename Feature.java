@@ -5,6 +5,7 @@ public class Main {
 	public static void main(String[] args) 
 	{
 		System.out.println("Tiktok_TestAutomation_script_Feature_V1");
+		System.out.println("Tiktok_TestAutomation_script_Feature_B_push");
 	}
 
 }
