@@ -1,0 +1,69 @@
+A
+
+git config --global user.name "deepdbit"
+git config --global user.email "deepdbit@gmail.com"
+git config --list
+
+git init
+git remote add origin "https://github.com/deepdbit/githubassignment.git"
+git remote -v
+
+git pull --rebase origin master
+git push origin master
+
+
+B
+$ git init
+$ git remote add origin "https://github.com/deepdbit/githubassignment.git"
+$ git remote -v
+$ git pull origin master
+$ git commit -a -m "B first commit"
+$ git status
+$ git commit -a -m "B second commit"
+$ git push origin master
+
+
+C
+$ git pull origin master
+$ git  commit -a -m "c first commit"
+$ git push origin master
+
+A
+$ git pull origin master
+$ git branch Enhancement
+$ git checkout Enhancement
+$git push origin Enhancement
+$git branch -a
+
+C
+$ git pull origin Enhancement
+$ git checkout Enhancement
+$ git add Feature.java
+$ git status
+$ git commit -a -m "C commit enhancement"
+$ git push origin Enhancement
+
+B
+$ git pull origin Enhancement
+$ git checkout Enhancement
+$ git commit -a -m "B commit enhancement"
+$ git push origin Enhancement
+$ git status
+------------------------------------------------------------------
+New Scenario- 
+C created Feature new and added respective print statement both pushed same file and A merges the Enhancement Branch with master branch
+
+
+$ git pull origin Enhancement
+$ git add "Feature new.java"
+$ git commit -a -m "C feature new"
+$ git push origin Enhancement
+
+A
+git checkout master
+git merge Enhancement
+$ git push origin master
+$git branch -d Enhancement(Delete Local Branch)
+$ git push origin --delete Enhancement(Delete Remote Branch)
+
+Now Enhancement is the new Master branch and previous Enhancement Branch Deleted.
